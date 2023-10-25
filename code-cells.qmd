@@ -1,0 +1,16 @@
+---
+title: "Code Cells"
+format: html
+editor: visual
+---
+
+```{r}
+library(palmerpenguins)
+library(tidyverse)
+
+ggplot(
+  penguins, 
+  aes(x = bill_length_mm, y = bill_depth_mm, col = island)
+  ) +
+  geom_point()
+```
